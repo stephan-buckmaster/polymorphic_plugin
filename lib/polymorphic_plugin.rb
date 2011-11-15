@@ -1,3 +1,7 @@
+
+require 'polymorphic_plugin/thing'
+require 'polymorphic_plugin/thing_grouping'
+
 module PolymorphicPlugin
   autoload :PolymorphicHolder,    'polymorphic_plugin/polymorphic_holder'
 
