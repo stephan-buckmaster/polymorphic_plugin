@@ -10,7 +10,6 @@ module PolymorphicPlugin
         has_many :thing_groupings, :as => :grouper
         has_many :things, :through => :thing_groupings
         include PolymorphicPlugin::PolymorphicHolder::InstanceMethods
-
       end
     end
 
