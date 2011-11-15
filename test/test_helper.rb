@@ -9,6 +9,9 @@ Rails.backtrace_cleaner.remove_silencers!
 # Load support files
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
+require File.dirname(__FILE__) + '/../lib/generators/templates/thing.rb'
+require File.dirname(__FILE__) + '/../lib/generators/templates/thing_grouping.rb'
+
 require 'shoulda'
 require 'factory_girl'
 FactoryGirl.find_definitions

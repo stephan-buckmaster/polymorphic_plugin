@@ -23,4 +23,9 @@ class PolymorphicPluginGenerator < Rails::Generators::Base
     migration_template 'migration.rb', "db/migrate/#{next_migration_number(File.john(File.dirname(__FILE__)))}_polymorphic_plugin_migration.rb"
   end
 
+  def create_models
+    template "thing.rb", File.join('app/models', "thing.rb")
+    template "thing_grouping.rb", File.join('app/models', "thing_grouping.rb")
+  end
+
 end
