@@ -11,6 +11,6 @@ See [the blog post](http://mettadore.com/analysis/polymorphic-has_many-through-i
 
 Look at polymorphic_plugin_test.rb file to see what's going on.
 
-## inside-module branch
+## outside-module branch
 
-This branch: 'inside-module' fails. The other branch: 'outside-module' passes.
+This branch: 'outside-module' passes. The other branch: 'inside-module' fails.
