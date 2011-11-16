@@ -7,8 +7,8 @@ module PolymorphicPlugin
 
     module ClassMethods
       def holds_things
-        has_many :thing_groupings, :as => :thingable
-        has_many :things, :through => :thing_groupings
+        has_many :thing_groupings, :class_name => 'PolymorphicPlugin::ThingGrouping', :as => :thingable
+        has_many :things, :class_name => 'PolymorphicPlugin::Thing', :through => :thing_groupings
         include PolymorphicPlugin::PolymorphicHolder::InstanceMethods
       end
     end
